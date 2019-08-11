@@ -1,6 +1,8 @@
 body {
 	background: #fff;
-	font: 15px Arial, Helvetica, sans-serif;
+	/*font: 15px "Open Sans", Calibri, Helvetica, sans-serif;*/
+	font-size: 15px;
+	font-family: Calibri, Helvetica, sans-serif;;
 	line-height: 1.4;
 	margin: 50px 0;
 	margin-bottom: 100px;
@@ -26,22 +28,58 @@ blockquote {
 }
 #resume {
 	margin: 0 auto;
-	max-width: 480px;
+	max-width: 800px;
 	padding: 0 20px;
 }
 #basics {
 	margin-bottom: -10px;
 }
-#basics h3 {
+
+h1 {
+	font-size: 32pt;
+	text-align: center;
+	max-height: 25px;
+}
+
+h2 {
+	font-size: 18pt;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#basics .h3 {
 	margin-top: 1.5em;
 }
-#basics .contact strong,
-#location strong {
+
+.dot{
+	font-size: 24pt;
+	vertical-align: middle;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#basics > div.contact {
+	text-align: center;
+}
+
+hr.style2 {
+	border-top: 3px double #8c8b8b;
+}
+
+#basics .contact strong {
 	clear: both;
-	float: left;
+	margin-right: 5px;
 	line-height: 1.3;
 	width: 120px;
 }
+
+#basics > div.summary {
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
 #profiles,
 #skills {
 	overflow: hidden;
