@@ -1,6 +1,7 @@
 var fs = require("fs");
 var path = require('path');
 var Handlebars = require("handlebars");
+var moment = require("moment");
 
 function render(resume) {
 	var css = fs.readFileSync(__dirname + "/style.css", "utf-8");
@@ -24,6 +25,13 @@ function render(resume) {
 		resume: resume
 	});
 }
+
+Handlebars.registerHelper('formatDate', function(dateString) {
+    return new Handlebars.SafeString(
+        moment(dateString).format("MMM YYYY")
+    );
+});
+
 
 module.exports = {
 	render: render
