@@ -2,39 +2,41 @@
     <section id="work">
         <h2>Work Experience</h2>
         {{#each resume.work}}
-            <div class="item">
-                {{#if company}}
-                    <h3 class="name">{{company}}</h3>
-                {{/if}}
-                {{#if position}}
-                    <span class="position">{{position}}</span>
-                {{/if}}
-                {{#if location}}
-                    <span class="location">{{location}}</span>
-                {{/if}}
-                <span class="date">
-			{{#if startDate}}
-                <span class="startDate">{{formatDate startDate}}</span>
-            {{/if}}
-                    {{#if endDate}}
-                        <span class="endDate">- {{formatDate endDate}}</span>
-                    {{else}}
-                        <span class="endDate">- Present</span>
+            {{#unless ignore }}
+                <div class="item">
+                    {{#if company}}
+                        <h3 class="name">{{company}}</h3>
                     {{/if}}
-		</span>
-                {{#if summary}}
-                    <div class="summary">
-                        <p>{{summary}}</p>
-                    </div>
-                {{/if}}
-                {{#if highlights.length}}
-                    <ul class="highlights">
-                        {{#each highlights}}
-                            <li>{{.}}</li>
-                        {{/each}}
-                    </ul>
-                {{/if}}
-            </div>
+                    {{#if position}}
+                        <span class="position">{{position}}</span>
+                    {{/if}}
+                    {{#if location}}
+                        <span class="location">{{location}}</span>
+                    {{/if}}
+                    <span class="date">
+                    {{#if startDate}}
+                        <span class="startDate">{{formatDate startDate}}</span>
+                    {{/if}}
+                        {{#if endDate}}
+                            <span class="endDate">- {{formatDate endDate}}</span>
+                        {{else}}
+                            <span class="endDate">- Present</span>
+                        {{/if}}
+                </span>
+                    {{#if summary}}
+                        <div class="summary">
+                            <p>{{summary}}</p>
+                        </div>
+                    {{/if}}
+                    {{#if highlights.length}}
+                        <ul class="highlights">
+                            {{#each highlights}}
+                                <li>{{.}}</li>
+                            {{/each}}
+                        </ul>
+                    {{/if}}
+                </div>
+            {{/unless}}
         {{/each}}
     </section>
 {{/if}}
