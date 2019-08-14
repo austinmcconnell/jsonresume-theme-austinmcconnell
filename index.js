@@ -32,6 +32,15 @@ Handlebars.registerHelper('formatDate', function(dateString) {
     );
 });
 
+Handlebars.registerHelper('formatYear', function(dateString) {
+    return new Handlebars.SafeString(moment(dateString).format("YYYY"));
+});
+
+Handlebars.registerHelper('formatStudyType', function(studyString) {
+    return new Handlebars.SafeString(studyString.replace( /[a-z ]/g, ''));
+});
+
+
 
 module.exports = {
 	render: render

@@ -111,9 +111,24 @@ ul.highlights {
 #skills {
 	overflow: hidden;
 }
+
 #profiles .item,
 #skills .item {
-	float: left;
-	width: 50%;
+	text-align: center;
+	width: 95%
 }
 
+
+#education span.location:before, #education span.year:before{
+	content:'\2022';
+	margin-left: 3px;
+	margin-right: 3px;
+	font-size: 16px;
+	vertical-align: middle;
+}
+
+
+#skills ul.keywords {padding-inline-start: 0px;}
+#skills ul li { list-style: none; display: inline;}
+#skills ul li:after { content: " \00b7"; }
+#skills ul li:last-child:after { content: none; }
