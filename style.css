@@ -1,7 +1,10 @@
+html {
+	font-size: 12pt; /* 12pt == 16px == 100% */
+}
 body {
 	background: #fff;
 	/*font: 15px "Open Sans", Calibri, Helvetica, sans-serif;*/
-	font-size: 15px;
+	font-size: .92rem;
 	font-family: Calibri, Helvetica, sans-serif;;
 	line-height: 1.4;
 	margin: 50px 0;
@@ -36,13 +39,13 @@ blockquote {
 }
 
 h1 {
-	font-size: 32pt;
+	font-size: 2.7rem;
 	text-align: center;
 	max-height: 25px;
 }
 
 h2 {
-	font-size: 18pt;
+	font-size: 1.5rem;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -68,7 +71,7 @@ span.position:before, span.location:before, span.date:before {
 }
 
 .dot{
-	font-size: 24pt;
+	font-size: 2rem;
 	vertical-align: middle;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -123,7 +126,7 @@ ul.highlights {
 	content:'\2022';
 	margin-left: 3px;
 	margin-right: 3px;
-	font-size: 16px;
+	font-size: 1rem;
 	vertical-align: middle;
 }
 
