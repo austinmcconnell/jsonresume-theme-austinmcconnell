@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "handlebars": "^2.0.0-alpha.4",
-    "moment": "^2.24.0",
-    "resume-cli": "^1.2.7"
+    "moment": "^2.27.0",
+    "resume-cli": "^1.2.8"
   }
 }
